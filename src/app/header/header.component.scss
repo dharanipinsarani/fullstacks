@@ -1,0 +1,37 @@
+header{
+    padding: 30px 0;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+header ul li{
+    padding: 20px;
+  
+}
+header ul li:first-child{
+    padding-left:0;
+    position: relative;
+   
+}
+header ul li:last-child{
+    padding-right:o;
+   
+}
+header ul li a{
+    color: black;
+    font-weight: 500;
+    position: relative;
+}
+header ul li a:hover::after,header ul li a.is-active::after{
+    content: '';
+    background: white;
+    height: 14px;
+    position: absolute;
+    left: 1px;
+    z-index: -1;
+    bottom: 0;
+    right: -3px;
+}
